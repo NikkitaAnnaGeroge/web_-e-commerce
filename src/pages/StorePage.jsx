@@ -26,7 +26,7 @@ export const StorePage = ({ onViewDetails }) => {
             <div>
               <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '8px' }}>Free Global Delivery</h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: 1.5 }}>
-                Complimentary shipping on all orders over $150. Fast tracking included.
+                Complimentary shipping on all orders over ₹12,000. Fast tracking included.
               </p>
             </div>
           </div>
