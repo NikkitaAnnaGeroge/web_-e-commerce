@@ -195,7 +195,7 @@ export const AppProvider = ({ children }) => {
 
   // Cart calculations
   const cartSubtotal = cartItems.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
-  const cartShipping = cartSubtotal > 150 || cartSubtotal === 0 ? 0 : 15.0;
+  const cartShipping = cartSubtotal > 12000 || cartSubtotal === 0 ? 0 : 1200.0;
   const cartTax = cartSubtotal * 0.08; // 8% mock tax
   const cartTotal = cartSubtotal + cartShipping + cartTax;
   const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);

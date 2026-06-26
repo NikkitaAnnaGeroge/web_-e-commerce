@@ -60,7 +60,7 @@ export const ProductDetailPage = ({ product, onBackClick }) => {
             <span className="detail-reviews">{product.reviewCount} customer reviews</span>
           </div>
 
-          <div className="detail-price">${product.price.toFixed(2)}</div>
+          <div className="detail-price">₹{product.price.toFixed(2)}</div>
 
           <p className="detail-description">{product.description}</p>
 

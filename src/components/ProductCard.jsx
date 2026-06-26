@@ -56,7 +56,7 @@ export const ProductCard = ({ product, onViewDetails }) => {
         </div>
 
         <div className="product-card-footer">
-          <span className="product-card-price">${product.price.toFixed(2)}</span>
+          <span className="product-card-price">₹{product.price.toFixed(2)}</span>
           <button className="add-cart-btn" onClick={handleAddToCartClick}>
             Add to Cart
           </button>

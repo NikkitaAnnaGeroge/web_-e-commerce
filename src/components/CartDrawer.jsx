@@ -50,7 +50,7 @@ export const CartDrawer = ({ setView }) => {
                 <div className="cart-item-details">
                   <h4 className="cart-item-name">{item.product.name}</h4>
                   <p className="cart-item-variant">Variant: {item.variant}</p>
-                  <span className="cart-item-price">${item.product.price.toFixed(2)}</span>
+                  <span className="cart-item-price">₹{item.product.price.toFixed(2)}</span>
 
                   <div className="cart-item-actions">
                     {/* Qty controller */}
@@ -98,19 +98,19 @@ export const CartDrawer = ({ setView }) => {
           <div className="cart-footer">
             <div className="cart-summary-row">
               <span>Subtotal</span>
-              <span>${cartSubtotal.toFixed(2)}</span>
+              <span>₹{cartSubtotal.toFixed(2)}</span>
             </div>
             <div className="cart-summary-row">
               <span>Shipping</span>
-              <span>{cartShipping === 0 ? 'FREE' : `$${cartShipping.toFixed(2)}`}</span>
+              <span>{cartShipping === 0 ? 'FREE' : `₹${cartShipping.toFixed(2)}`}</span>
             </div>
             <div className="cart-summary-row">
               <span>Est. Tax (8%)</span>
-              <span>${cartTax.toFixed(2)}</span>
+              <span>₹{cartTax.toFixed(2)}</span>
             </div>
             <div className="cart-summary-total">
               <span>Total</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>₹{cartTotal.toFixed(2)}</span>
             </div>
 
             <button className="checkout-btn" onClick={handleCheckoutClick}>

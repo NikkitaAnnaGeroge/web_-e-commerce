@@ -155,7 +155,7 @@ export const CheckoutPage = ({ setView }) => {
             </div>
             <div className="success-detail-row" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid var(--border-color)', fontWeight: 'bold' }}>
               <span>Total Paid:</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>₹{cartTotal.toFixed(2)}</span>
             </div>
           </div>
 
@@ -333,7 +333,7 @@ export const CheckoutPage = ({ setView }) => {
                 ) : (
                   <>
                     <Shield size={18} />
-                    <span>Pay ${cartTotal.toFixed(2)}</span>
+                    <span>Pay ₹{cartTotal.toFixed(2)}</span>
                   </>
                 )}
               </button>
@@ -363,7 +363,7 @@ export const CheckoutPage = ({ setView }) => {
                     </div>
                   </div>
                   <span style={{ fontWeight: 600, fontSize: '14px' }}>
-                    ${(item.product.price * item.quantity).toFixed(2)}
+                    ₹{(item.product.price * item.quantity).toFixed(2)}
                   </span>
                 </div>
               ))}
@@ -373,19 +373,19 @@ export const CheckoutPage = ({ setView }) => {
             <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px' }}>
               <div className="cart-summary-row" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '14px', color: 'var(--text-secondary)' }}>
                 <span>Subtotal</span>
-                <span>${cartSubtotal.toFixed(2)}</span>
+                <span>₹{cartSubtotal.toFixed(2)}</span>
               </div>
               <div className="cart-summary-row" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '14px', color: 'var(--text-secondary)' }}>
                 <span>Shipping</span>
-                <span>{cartShipping === 0 ? 'FREE' : `$${cartShipping.toFixed(2)}`}</span>
+                <span>{cartShipping === 0 ? 'FREE' : `₹${cartShipping.toFixed(2)}`}</span>
               </div>
               <div className="cart-summary-row" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '14px', color: 'var(--text-secondary)' }}>
                 <span>Est. Tax (8%)</span>
-                <span>${cartTax.toFixed(2)}</span>
+                <span>₹{cartTax.toFixed(2)}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '20px', fontWeight: 800, marginTop: '16px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
                 <span>Total</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>₹{cartTotal.toFixed(2)}</span>
               </div>
             </div>
           </div>
