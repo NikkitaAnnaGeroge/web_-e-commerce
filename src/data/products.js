@@ -42,7 +42,7 @@ export const products = [
     price: 3999.00,
     rating: 4.6,
     reviewCount: 94,
-    image: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=800&auto=format&fit=crop&q=80',
+    image: '/wallet.png',
     description: 'Crafted from premium full-grain Italian leather, this slim wallet combines elegance with security. Features built-in RFID blocking technology and holds up to 10 cards and cash without bulk.',
     features: [
       '100% Full-Grain Italian Leather',
